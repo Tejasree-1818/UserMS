@@ -14,7 +14,9 @@
 	<name>rest-service</name>
 	<description>Demo project for Spring Boot</description>
 <properties>
-	
+	        <sonar.projectKey>Tejasree-1818_UserMS</sonar.projectKey>
+  <sonar.organization>group-17-key</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>11</java.version>
