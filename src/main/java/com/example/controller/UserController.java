@@ -126,7 +126,7 @@ public class UserController {
 	ProductDTO productId = new RestTemplate().getForObject("http://localhost:8400/product/wishlist/"+productName, ProductDTO.class);
 	System.out.println(productId.getProdId());
 	
-	//	WishlistDTO value=new WishlistDTO();
+	
 		WishlistDTO value = userImpl.wishlistData(buyerId,productId.getProdId());
 		return value;		
 	
