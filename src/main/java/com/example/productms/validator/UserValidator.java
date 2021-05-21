@@ -59,7 +59,7 @@ public class UserValidator {
 	}
 
 	public boolean validateBuyer(BuyerDTO buyerdto) {
-		// TODO Auto-generated method stub
+	
 		String name=buyerdto.getName();
 		String email=buyerdto.getEmailId();
 		String phoneNo=buyerdto.getPhoneNumber();
