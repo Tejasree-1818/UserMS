@@ -19,7 +19,6 @@ import com.example.dto.CartDTO;
 import com.example.dto.ProductDTO;
 import com.example.dto.SellerDTO;
 import com.example.dto.WishlistDTO;
-import com.example.exception.UserException;
 import com.example.service.UserService;
 
 @CrossOrigin
@@ -31,8 +30,7 @@ public class UserController {
 	@Autowired
 	private UserService userImpl;
 	
-	@Autowired
-	private Environment environment;
+	
 	
 	
 	@RequestMapping(value="/buyerRegister",method=RequestMethod.POST)
