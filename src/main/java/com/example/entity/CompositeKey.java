@@ -12,7 +12,7 @@ public class CompositeKey implements Serializable{
 	}
 	public CompositeKey() {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 	private static final long serialVersionUID= 1L;
 	private String buyerId;
