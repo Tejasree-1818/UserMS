@@ -74,32 +74,7 @@ public void setPassword(String password) {
 	this.password = password;
 }
 
-//@Override
-//public int hashCode()
-//{
-//final int prime=31;
-//int result=1;
-//result=prime * result +((buyerId==null) ? 0: buyerId.hashCode());
-//return result;
-//}
-//  @Override
-//  public boolean equals(Object obj)
-//  {
-//      if(this ==obj)
-//         return true;
-//      if(obj==null)
-//         return false;
-//      if(getClass()!=obj.getClass())
-//         return false;
-//      Buyer buyer= (Buyer) obj;
-//      if(buyerId==null){
-//         if(buyer.buyerId != null)
-//              return false;
-//      }
-//      else if (!buyerId.equals(buyer.buyerId))
-//               return false;
-//      return true;
-//
-//}
+
+
 
 }
