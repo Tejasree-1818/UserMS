@@ -64,7 +64,7 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	public String registerSeller(SellerDTO sellerdto) {
-		// TODO Auto-generated method stub
+		
 		if(v.validateSeller(sellerdto))
 		{
 		Seller seller= new Seller();
@@ -83,7 +83,7 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	public String buyerLogin(String emailId,String password) throws UserException{
-		//System.out.println(emailId);
+		
 		Optional<Buyer> email=BuyerRepository.findByEmailId(emailId);
 		if(email.isEmpty()){
 			throw new UserException("Service.INVALID_CREDENTIALS");
@@ -103,7 +103,7 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	public String sellerLogin(String emailId,String password) throws UserException{
-		// TODO Auto-generated method stub
+		
 		System.out.println(emailId);
 		Optional<Seller> emailSeller = sellerRepository.findByEmail(emailId);
 		if(emailSeller.isEmpty())
@@ -120,7 +120,7 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	public String deleteBuyer(String buyerId) throws UserException{
-		// TODO Auto-generated method stub
+	
 		Optional<Buyer> buyerDelete = BuyerRepository.findById(buyerId);
 		if(buyerDelete.isEmpty())
 			throw new UserException("Service.USER_NOT_FOUND"); 
